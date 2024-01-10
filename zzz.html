@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Image Upload Section -->
+    <div id="uploadSection">
+        <input type="file" id="fileInput" accept="image/*" />
+    </div>
+
+    <!-- Results Section -->
+    <div id="resultsSection">
+        <canvas id="canvasOriginal"></canvas>
+        <canvas id="canvasProceso1"></canvas>
+        <canvas id="canvasProceso2"></canvas>
+        <br/>
+        <a id="downloadLink1" download="imagen_hsv.png">Descargar Imagen Proceso 1</a>
+        <a id="downloadLink2" download="imagen_rgb.png">Descargar Imagen Proceso 2</a>  
+    </div>
+
+    <script src="https://docs.opencv.org/master/opencv.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
+
